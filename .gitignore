@@ -1,3 +1,7 @@
 .idea/
 *.user
+packages/
+rock-paper-scissors/bin/
 rock-paper-scissors/obj/
+unit-test/bin/
+unit-test/obj/

@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rock-paper-scissors", "rock-paper-scissors\rock-paper-scissors.csproj", "{FE4DECF7-1D85-48B9-AAB5-254FFD3253E0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "unit-test", "unit-test\unit-test.csproj", "{CE2775D8-B835-4A06-9663-A7E64FFB7107}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{FE4DECF7-1D85-48B9-AAB5-254FFD3253E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE4DECF7-1D85-48B9-AAB5-254FFD3253E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE4DECF7-1D85-48B9-AAB5-254FFD3253E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE2775D8-B835-4A06-9663-A7E64FFB7107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE2775D8-B835-4A06-9663-A7E64FFB7107}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE2775D8-B835-4A06-9663-A7E64FFB7107}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE2775D8-B835-4A06-9663-A7E64FFB7107}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
