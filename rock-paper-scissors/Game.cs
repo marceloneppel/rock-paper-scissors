@@ -33,7 +33,7 @@ namespace rock_paper_scissors
             }
 
             // Otherwise, return the name and move of the winning player.
-            List<string> gameWinner;
+            List<string> gameWinner = null;
             switch (firstPlayerMove)
             {
                 case "R":
