@@ -48,5 +48,19 @@ namespace rock_paper_scissors
             }
             return gameWinner;
         }
+
+        public static List<string> rps_tournament_winner(List<dynamic> tournamentRound)
+        {
+            if (tournamentRound[0] is List<string>)
+            {
+                var game = new List<List<string>>{tournamentRound[0] as List<string>, tournamentRound[1] as List<string>};
+                return rps_game_winner(game);
+            }
+
+            var firstGameWinner = rps_tournament_winner(tournamentRound[0] as List<dynamic>);
+            var secondGameWinner = rps_tournament_winner(tournamentRound[1] as List<dynamic>);
+            
+            return rps_game_winner(new List<List<string>> {firstGameWinner, secondGameWinner});
+        }
     }
 }
