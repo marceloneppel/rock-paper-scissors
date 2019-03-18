@@ -61,6 +61,14 @@ namespace unit_test
         }
         
         [Test]
+        public void LowercaseMovesShouldWork()
+        {
+            var game = new List<List<string>> { new List<string>{"Armando", "r"}, new List<string>{"Dave", "p"} };
+            var gameWinner = RockPaperScissors.rps_game_winner(game);
+            Assert.AreEqual(new List<string>{"Dave", "p"}, gameWinner);
+        }
+        
+        [Test]
         public void MoreThanTwoPlayersShouldThrowWrongNumberOfPlayersError()
         {
             var exceptionMessage = "";
