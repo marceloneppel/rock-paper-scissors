@@ -67,5 +67,13 @@ namespace unit_test
             var tournamentWinner = RockPaperScissors.rps_tournament_winner(tournament);
             Assert.AreEqual(new List<string>{"Richard", "R"}, tournamentWinner);
         }
+        
+        [Test]
+        public void ZeroRoundsTournamentShouldReturnNull()
+        {
+            var tournament = new List<dynamic>();
+            var tournamentWinner = RockPaperScissors.rps_tournament_winner(tournament);
+            Assert.AreEqual(null, tournamentWinner);
+        }
     }
 }
