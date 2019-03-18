@@ -51,6 +51,11 @@ namespace rock_paper_scissors
 
         public static List<string> rps_tournament_winner(List<dynamic> tournamentRound)
         {
+            if (tournamentRound.Count == 0)
+            {
+                return null;
+            }
+            
             if (tournamentRound[0] is List<string>)
             {
                 var game = new List<List<string>>{tournamentRound[0] as List<string>, tournamentRound[1] as List<string>};
