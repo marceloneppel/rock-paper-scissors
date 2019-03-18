@@ -14,7 +14,7 @@ namespace unit_test
             {
                 new List<string>{"Armando", "P"}, new List<string>{"Dave", "S"}
             };
-            var tournamentWinner = Game.rps_tournament_winner(tournament);
+            var tournamentWinner = RockPaperScissors.rps_tournament_winner(tournament);
             Assert.AreEqual(new List<string>{"Dave", "S"}, tournamentWinner);
         }
         
@@ -46,7 +46,7 @@ namespace unit_test
                     }
                 }
             };
-            var tournamentWinner = Game.rps_tournament_winner(tournament);
+            var tournamentWinner = RockPaperScissors.rps_tournament_winner(tournament);
             Assert.AreEqual(new List<string>{"Richard", "R"}, tournamentWinner);
         }
         
@@ -64,7 +64,7 @@ namespace unit_test
                     new List<string>{"Richard", "R"}, new List<string>{"Michael", "S"}
                 }
             };
-            var tournamentWinner = Game.rps_tournament_winner(tournament);
+            var tournamentWinner = RockPaperScissors.rps_tournament_winner(tournament);
             Assert.AreEqual(new List<string>{"Richard", "R"}, tournamentWinner);
         }
     }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace rock_paper_scissors
 {
-    public static class Game
+    public static class RockPaperScissors
     {
         private const string NoSuchStrategyError = "NoSuchStrategyError";
         private const string WrongNumberOfPlayersError = "WrongNumberOfPlayersError";

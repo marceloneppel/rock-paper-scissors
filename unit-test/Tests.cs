@@ -18,7 +18,7 @@ namespace unit_test
                 {
                     new List<string> {"Armando", "R"}, new List<string> {"Dave", "X"}
                 };
-                Game.rps_game_winner(game);
+                RockPaperScissors.rps_game_winner(game);
             }
             catch (Exception e)
             {
@@ -34,7 +34,7 @@ namespace unit_test
         public void EqualMovesShouldMakeWinnerTheFirstPlayer()
         {
             var game = new List<List<string>> { new List<string>{"Armando", "R"}, new List<string>{"Dave", "R"} };
-            var gameWinner = Game.rps_game_winner(game);
+            var gameWinner = RockPaperScissors.rps_game_winner(game);
             Assert.AreEqual(new List<string>{"Armando", "R"}, gameWinner);
         }
         
@@ -48,7 +48,7 @@ namespace unit_test
                 {
                     new List<string> {"Armando", "R"}
                 };
-                Game.rps_game_winner(game);
+                RockPaperScissors.rps_game_winner(game);
             }
             catch (Exception e)
             {
@@ -70,7 +70,7 @@ namespace unit_test
                 {
                     new List<string> {"Armando", "R"}, new List<string> {"Dave", "R"}, new List<string> {"Marcelo", "R"}
                 };
-                Game.rps_game_winner(game);
+                RockPaperScissors.rps_game_winner(game);
             }
             catch (Exception e)
             {
@@ -86,7 +86,7 @@ namespace unit_test
         public void PaperShouldWinRock()
         {
             var game = new List<List<string>> { new List<string>{"Armando", "R"}, new List<string>{"Dave", "P"} };
-            var gameWinner = Game.rps_game_winner(game);
+            var gameWinner = RockPaperScissors.rps_game_winner(game);
             Assert.AreEqual(new List<string>{"Dave", "P"}, gameWinner);
         }
         
@@ -94,7 +94,7 @@ namespace unit_test
         public void RockShouldWinScissors()
         {
             var game = new List<List<string>> { new List<string>{"Armando", "S"}, new List<string>{"Dave", "R"} };
-            var gameWinner = Game.rps_game_winner(game);
+            var gameWinner = RockPaperScissors.rps_game_winner(game);
             Assert.AreEqual(new List<string>{"Dave", "R"}, gameWinner);
         }
         
@@ -102,7 +102,7 @@ namespace unit_test
         public void ScissorsShouldWinPaper()
         {
             var game = new List<List<string>> { new List<string>{"Armando", "S"}, new List<string>{"Dave", "P"} };
-            var gameWinner = Game.rps_game_winner(game);
+            var gameWinner = RockPaperScissors.rps_game_winner(game);
             Assert.AreEqual(new List<string>{"Armando", "S"}, gameWinner);
         }
     }
