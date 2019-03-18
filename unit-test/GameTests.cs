@@ -6,7 +6,7 @@ using rock_paper_scissors;
 namespace unit_test
 {
     [TestFixture]
-    public class Tests
+    public class GameTests
     {
         [Test]
         public void AnyStrategyDifferentFromRpsShouldThrowNoSuchStrategyError()
